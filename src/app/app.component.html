@@ -1,6 +1,15 @@
-<nav>
-  <div class="nav-wrapper teal">
-    <a href="#" class="brand-logo center">Prospection Prévoyance App</a>
+<h1 class='center'>Prospection Prevoyance CC</h1>
+<div class='container'>
+<div class="row">
+<div *ngFor='let pp of pprevoyances' class="col s6 m4">
+  <div class="card horizontal" (click)="selectPPCC(pp)">
+    <div class="card-stacked">
+      <div class="card-content">
+        <p>{{ pp.name }}</p>
+        <p><small>{{ pp.dateMAJ }}</small></p>
+      </div>
+    </div>
   </div>
-</nav>
-<!--<router-outlet></router-outlet>-->
+</div>
+</div>
+</div>
